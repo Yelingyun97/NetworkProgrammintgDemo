@@ -2,6 +2,9 @@
 #include <unistd.h>
 #include <signal.h>
 #include <sys/wait.h>
+
+void error_handling(char* msg);
+
 void read_childproc(int sig)
 {
 	pid_t pid;
