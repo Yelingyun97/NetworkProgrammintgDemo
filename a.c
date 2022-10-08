@@ -3,7 +3,12 @@
 #include <signal.h>
 #include <sys/wait.h>
 
-void error_handling(char* msg);
+void error_handling(char* msg)
+{
+	fputs(msg, stderr);
+	fputc('\n', stderr);
+	exit(1);
+}
 
 void read_childproc(int sig)
 {
