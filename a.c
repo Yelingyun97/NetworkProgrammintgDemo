@@ -2,6 +2,7 @@
 #include <unistd.h>
 #include <signal.h>
 #include <sys/wait.h>
+
 void error_handling(char* msg)
 {
 	fputs(msg, stderr);
